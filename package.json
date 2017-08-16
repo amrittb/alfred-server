@@ -1,0 +1,32 @@
+{
+  "name": "alfred",
+  "version": "0.0.1",
+  "description": "Butler for smart homes",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "request": "^2.81.0",
+    "body-parser": "^1.17.2",
+    "nunjucks": "^3.0.1",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "express-session": "^1.15.4",
+    "sequelize": "^4.4.2",
+    "sqlite3": "^3.1.8"
+  },
+  "engines": {
+    "node": "8.1.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/alfred"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
