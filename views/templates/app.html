@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}{% endblock %} Alfred</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <!-- Milligram CSS minified -->
+    <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <!-- Application CSS -->
+    <link rel="stylesheet" href="/app.css">
+  </head>
+  <body>
+    <header class="app-header text--center">
+      <a href="/">
+        <img src="https://cdn.glitch.com/523bee3f-1f24-472e-8466-59b0fc9f4fbd%2FAlfred.png?1500855235132" class="app-header__brand-logo">
+        <h1 class="text--center app-header__heading">
+          Alfred
+        </h1>
+      </a>
+    </header>
+    <main>
+      {% block main %}
+      {% endblock %}
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>

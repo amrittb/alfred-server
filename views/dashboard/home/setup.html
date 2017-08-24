@@ -1,0 +1,30 @@
+{% extends "templates/dashboard.html" %}
+
+{% block title %}
+  Home Setup -
+{% endblock %}
+
+{% block dashboardContent %}
+  <form method="post" action="/home/setup">
+    
+    {% if home %}
+      <input type="hidden" name="id" value="{{ home.id }}">
+    {% endif %}
+    
+    <label for="name">Name</label>
+    <input type="text" placeholder="Name for this home." id="name" name="name" 
+           {% if home %}
+             value="{{home.name}}"
+           {% endif %}
+           />
+    
+    <label for="mac-address">MAC Address</label>
+    <input type="text" placeholder="MAC Address of your device" id="mac-address" name="macAddress" 
+           {% if home %}
+             value="{{home.macAddress}}"
+           {% endif %}
+           />
+    
+    <input type="submit" class="button button--black" value="Save" />
+  </form>
+{% endblock %}

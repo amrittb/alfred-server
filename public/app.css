@@ -1,0 +1,102 @@
+/* Typography */
+
+.text--center {
+  text-align: center;
+}
+
+.text--color-white {
+  color: #fff;
+}
+
+
+/* Images */
+.img--responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.img--rounded-corners {
+  border-radius: 4px;
+}
+
+/* Buttons */
+.button--black,
+input.button--black{
+  background: #222;
+  border-color: #222;
+}
+
+/* Header */
+.app-header {
+  background: #ecf0f1;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-header__brand-logo {
+  height: 10vh;
+  margin: 0.5rem;
+}
+
+.app-header__heading {
+  color: #606c76;
+  margin: 0;
+  font-size: 3rem;
+}
+
+/* Hero */
+.hero {
+  background: #dfe5fe9;
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  position: relative;
+}
+
+.hero--phone {
+  max-height: 100%;
+  max-width: 480px;
+  position: absolute;
+  bottom: 0;
+  right: 2rem;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.dashboard__header {
+  padding: 1em 0;
+  background: #f8f8f8;
+}
+
+.dashboard__header h4 {
+  font-size: 18px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.dashboard__header h4 img {
+  margin-right: 0.5em;
+  max-width: 40px;
+}
+
+.dashboard__content {
+  padding: 2em 0;
+}
+
+.dashboard__content--valign {
+  display: flex;
+  padding: 4em 0;
+  align-items: center;
+}
+
+@media all and (max-width: 960px) {
+
+  .hero--phone {
+    opacity: 0.7;
+  }
+}

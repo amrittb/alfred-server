@@ -1,0 +1,26 @@
+{% extends "templates/app.html" %}
+
+{% block title %}
+Dashboard - 
+{% endblock %}
+
+{% block main %}
+  <div class="dashboard">
+    <div class="dashboard__header">
+      <div class="container text--center">
+        <h4>
+          {% if user.profilePictureUrl %}
+            <img src="{{user.profilePictureUrl }}" class="img--rounded-corners" />
+          {% endif %}
+          Welcome, {{ user.salutation }} {{ user.firstName }}. | &nbsp; <a href="/logout">Logout</a>
+        </h4>
+      </div>
+    </div>
+    <div class="dashboard__content">
+      <div class="container">
+          {% block dashboardContent %}
+          {% endblock %}
+      </div>
+    </div>
+  </div>
+{% endblock %}
